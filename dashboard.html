@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Inventory Dashboard</h1>
+
+    <div class="dashboard-grid">
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <p id="totalProducts">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Stock</h3>
+            <p id="totalStock">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Inventory Value</h3>
+            <p id="inventoryValue">₹0</p>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock</h3>
+            <p id="lowStock">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Category</h3>
+            <p id="topCategory">N/A</p>
+        </div>
+
+    </div>
+
+    <h2>Category Breakdown</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Total Quantity</th>
+            </tr>
+        </thead>
+
+        <tbody id="categoryTable"></tbody>
+    </table>
+
+    <a href="index.html">
+        <button type="button">Back to Products</button>
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

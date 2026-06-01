@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Inventory Management System</h1>
+
+    <h2>Product Management</h2>
+
+    <form id="productForm">
+        <input type="hidden" id="editIndex">
+
+        <input type="text" id="name" placeholder="Product Name" required>
+
+        <input type="text" id="productId" placeholder="Product ID" required>
+
+        <input type="text" id="category" placeholder="Category" required>
+
+        <input type="number" id="quantity" placeholder="Quantity" required>
+
+        <input type="number" id="price" placeholder="Unit Price" required>
+
+        <input type="text" id="supplier" placeholder="Supplier Name">
+
+        <button type="submit">Save Product</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search by Name or Category">
+
+    <button onclick="exportCSV()">Export to CSV</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Supplier</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="productTable"></tbody>
+    </table>
+
+    <a href="dashboard.html">
+        <button type="button">Go to Dashboard</button>
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
